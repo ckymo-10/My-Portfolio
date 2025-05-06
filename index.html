@@ -1,0 +1,85 @@
+<!-----------------------------------------index.html------------------------------------------------------------------------>
+<!--This is how comments are written in HTML. Comments are useful to explain what a line of code is doing to the programmer-->
+<!--Comments are ignored by the browser and and are not shown on the actual webpage-->
+<!--This is a simple website that displays your favourite pictures-->
+
+<!DOCTYPE html>     <!--This tells the browser that it is an HTML document or webpage-->
+<html lang="en">    <!--This tells the browser that the display language is english-->
+<head>              <!--The head is where all the information about the webpage is declared. These are not seen on the webpage-->
+    <meta charset="UTF-8">      <!--This meta tag tells the browser to use the UTF-8 character set-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!--This meta tag tells the browser to use the full screen width of the device used to view the webpage-->
+    <link rel="stylesheet" href="styles.css">       <!--This links the cascade style sheet (CSS) to the webpage. The style sheet makes the webpage look good.-->
+    <title>My Portfolio</title>          <!--This is where you put the title of your webpage, e.g. My Pictures-->
+</head>     <!--This is the close tag for the head of the webpage-->
+<body>      <!--This is the beginning of the body of the webpage. Everything that is seen on your webpage goes in the body-->
+    <header>    <!--This is the header of the webpage. These elements are seen at the top of the webpage.-->
+        <div id="logo">     <!--This is a division with an id called "logo"-->
+            <h1>CALEB OBENG</h1>     <!--This <h1> is a heading on your webpage. The heading has six levels, h1 to h6, where h1 is the largest font while h6 is the smallest font.-->
+        </div>      <!--This is division close tag-->
+        <nav>       <!--The nav tag is used to declare your menu navigation items on the webpage-->
+            <ul>    <!--The ul tag is for an unsorted list of menu items-->
+                <li><a href="#main">Home</a></li>       <!--This <li> tag is an item in the list. The <a> tag is used to reference the section in the webpage with the id called "main"-->
+                <li><a href="#gallery">Gallery</a></li>       <!--This <li> tag is an item in the list. The <a> tag is used to reference the section in the webpage with the id called "gallery"-->
+                <li><a href="#projects">Projects</a></li>       <!--This <li> tag is an item in the list. The <a> tag is used to reference the section in the webpage with the id called "projects"-->
+                <li><a href="#contacts">Social Media</a></li>       <!--This <li> tag is an item in the list. The <a> tag is used to reference the section in the webpage with the id called "contacts"-->
+            </ul>       <!--This closes the unsorted list-->
+        </nav>      <!--This closes the menu navigation-->
+    </header>       <!--This closes the header part of the webpage-->
+    <section id="main">     <!--This is the section of the webpage with the id called "main"-->
+        <h2>Introduction</h2>   <!--This <h2> is a heading with the second largest font size-->
+        <div class="content">   <!--This division has a class called "content". It contains the first bit of content on your webpage-->
+            <!--This is a paragraph <p> with a class called "intro-text". This will show on your webpage-->
+            <p class="intro-text">Hi, I'm Caleb Obeng!<br>This is my first portfolio of wonderful pictures!<br>Hope you enjoy it!</p>
+            <img src="./https://drive.google.com/uc?export=view&id=15MSrborUHS7oQhuKziV27l-1vqlBs02w" alt="Picture 1" class="my-photos">     <!--This is how to display an image on your webpage. This image is called "image1.jpg".-->
+        </div>      <!--This closes the division-->
+        <div class="go-up">     <!--This division with a class called "go-up" has the link to the division with the id "logo" at the top of the webpage-->
+            <a href="#logo">TOP</a>     <!--This is the link to the division with the id called "logo" at the top of the page-->
+        </div>      <!--This closes the division-->
+    </section>      <!--This closes the section-->
+    <section id="gallery">     <!--This is the section of the webpage with the id called "gallery"-->
+        <h2>Gallery</h2>        <!--This <h2> is a heading with the second largest font size-->
+        <div class="images">    <!--This division with an id called "images" contains more pictures that will displayed on the webpage-->
+            <img src="./https://drive.google.com/uc?export=view&id=1kIOjVCuRGEwZig-9D9TvFAQgf6AE5NEN" alt="Picture 2" class="my-photos">     <!--This is how to display an image on your webpage. This image is called "image2.jpg".-->
+            <img src="./https://drive.google.com/uc?export=view&id=1B1NqhaiUBp9ks9JuLsVWdq8PYTfeQlqD" alt="Picture 3" class="my-photos">     <!--This is how to display an image on your webpage. This image is called "image3.jpg".-->
+            <img src="./https://drive.google.com/uc?export=view&id=1pHtyfg7qCh-GEDLADHd7Kizv3nw_BZAC" alt="Picture 4" class="my-photos">     <!--This is how to display an image on your webpage. This image is called "image4.jpg".-->
+            <img src="./https://drive.google.com/uc?export=view&id=1XcZqWZ5EJqTlv5alMuizQylbKvZf3Hvg">     <!--This is how to display an image on your webpage. This image is called "image5.jpg".-->
+            <br>        <!--This inserts a line break. Everything after this is displayed in the next line-->
+            <img src="./https://drive.google.com/uc?export=view&id=1Ft7sSfKceul16DF1r52oIdrrvCCJhJ9I" alt="Picture 6" class="my-photos">     <!--This is how to display an image on your webpage. This image is called "image6.jpg".-->
+            <img src="./https://drive.google.com/uc?export=view&id=1OQyMh2DAIVKCTLwosYUJF3s6YHZ2ewd0" alt="Picture 7" class="my-photos">     <!--This is how to display an image on your webpage. This image is called "image7.jpg".-->
+            <img src="./https://drive.google.com/uc?export=view&id=1q-xOAXlGMNlC0FE1zwVxlR3vpQS9iwiU" alt="Picture 8" class="my-photos">     <!--This is how to display an image on your webpage. This image is called "image8.jpg".-->
+            <img src="./https://drive.google.com/uc?export=view&id=1WQ1nq9_NjagGNO7yM0ahRjiQ_KcUB3Bv" alt="Picture 9" class="my-photos">     <!--This is how to display an image on your webpage. This image is called "image9.jpg".-->
+        </div>      <!--This closes the division-->
+        <div class="go-up">     <!--This division with a class called "go-up" has the link to the division with the id "logo" at the top of the webpage-->
+            <a href="#logo">TOP</a>     <!--This is the link to the division with the id called "logo" at the top of the page-->
+        </div>      <!--This closes the division-->
+    </section>      <!--This closes the section-->
+    <section id="projects">     <!--This is the section of the webpage with the id called "projects"-->
+        <h2>Projects</h2>       <!--This <h2> is a heading with the second largest font size-->
+        <br>        <!--This inserts a line break. Everything after this is displayed in the next line-->
+        <div class="project">       <!--This division with the class called "projects" has all your pictures in your project-->
+            <img src="./https://drive.google.com/uc?export=view&id=1B1NqhaiUBp9ks9JuLsVWdq8PYTfeQlqD" alt="Project 1" class="my-photos">     <!--This is how to display a project image on your webpage. This image is called "image7.jpg".-->
+            <div class="project-details">       <!--This division with a class called "project-details" contains the project description-->
+                <h3>Thrilling</h3>    <!--This <h3> is a heading with the third largest font size-->
+                <p>This project reflects the adrenaline rush of life!</p>      <!--This paragraph <p> contains the description of this project.-->
+            </div>      <!--This closes the division-->
+        </div>          <!--This closes the division-->
+        <div class="project">
+            <img src="./https://drive.google.com/uc?export=view&id=1Ft7sSfKceul16DF1r52oIdrrvCCJhJ9I" alt="Project 2" class="my-photos">     <!--This is how to display a project image on your webpage. This image is called "image8.jpg".-->
+            <div class="project-details">       <!--This division with a class called "project-details" contains the project description-->
+                <h3>Vibrant</h3>   <!--This <h3> is a heading with the third largest font size-->
+                <p>This project protrays a world engulfed in bold colors!</p>      <!--This paragraph <p> contains the description of this project.-->    
+            </div>      <!--This closes the division-->
+        </div>      <!--This closes the division-->
+        <div class="project">
+            <img src="./https://drive.google.com/uc?export=view&id=1WQ1nq9_NjagGNO7yM0ahRjiQ_KcUB3Bv" alt="Project 3" class="my-photos">     <!--This is how to display a project image on your webpage. This image is called "image9.jpg".-->
+            <div class="project-details">       <!--This division with a class called "project-details" contains the project description-->
+                <h3>Creative</h3>   <!--This <h3> is a heading with the third largest font size-->
+                <p>This project reflects a sense of purpose and imagination!</p>      <!--This paragraph <p> contains the description of this project.-->
+            </div>      <!--This closes the division-->
+        </div>      <!--This closes the division-->
+        <div class="go-up">     <!--This division with a class called "go-up" has the link to the division with the id "logo" at the top of the webpage-->
+            <a href="#logo">TOP</a>     <!--This is the link to the division with the id called "logo" at the top of the page-->
+        </div>      <!--This closes the division-->
+    </section>      <!--This closes the section-->
+    <footer>        <!--This is the footer of the webpage. Everything here is displayed at the bottom of the webpage-->
+        <p id="contacts">Copyright of Caleb Obeng</p>     
